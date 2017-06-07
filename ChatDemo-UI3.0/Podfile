@@ -8,19 +8,11 @@ target 'ChatDemo-UI3.0' do
     pod 'Hyphenate', '~> 3.3.2'
     
 	pod 'EaseUI', :path => '../EaseUI'
-
-	pod 'RedpacketAliAuthLib'
+    
+    pod 'RedPacketAliAuthUI', :path => '../cocoapods-redpacket-ui-2.0.0'
 	
 	#pod 'Hyphenate_VideoRecoder', :path => '../HyphenateVideoRecoder'
 
 end
 
-target 'ChatDemo-UI3.0-JDPay' do
-    
-    pod 'Hyphenate', '~> 3.3.2'
-    
-	pod 'EaseUI', :path => '../EaseUI'
-    
-    	pod 'RedpacketLib'
 
-end

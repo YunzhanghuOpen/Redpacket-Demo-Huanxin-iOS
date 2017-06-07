@@ -7,7 +7,7 @@
 //
 
 
-#import "RedpacketOpenConst.h"
+//#import "RedpacketOpenConst.h"
 #import "RedPacketUserConfig.h"
 #import "ChatWithRedPacketViewController.h"
 #import "EaseBubbleView+RedPacket.h"

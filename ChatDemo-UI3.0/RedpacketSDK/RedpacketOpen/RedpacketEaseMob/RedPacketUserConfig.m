@@ -8,9 +8,12 @@
 
 #import "RedPacketUserConfig.h"
 #import "UserProfileManager.h"
-#import "YZHRedpacketBridge.h"
-#import "RedpacketMessageModel.h"
+#import "RPRedpacketBridge.h"
+#import "AnalysisRedpacketModel.h"
 #import "ChatDemoHelper.h"
+#import "RPRedpacketConstValues.h"
+
+#define REDPACKET_CMD_MESSAGE   @"refresh_red_packet_ack_action"
 
 /** 环信IMToken过期 */
 NSInteger const RedpacketEaseMobTokenOutDate = 20304;
@@ -19,8 +22,7 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
 
 @interface RedPacketUserConfig () <EMClientDelegate,
                                     EMChatManagerDelegate,
-                                    YZHRedpacketBridgeDataSource,
-                                    YZHRedpacketBridgeDelegate>
+                                    RPRedpacketBridgeDelegate>
 {
     /** 环信商户APPKey*/
     NSString *_dealerAppKey;
@@ -30,15 +32,18 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
 
 @end
 
+
 @implementation RedPacketUserConfig
 
 /** 获取聊天消息和Cmd消息*/
 - (void)beginObserveMessage
 {
     if (!_isRegeistMessageDelegate && [EMClient sharedClient].chatManager) {
+        
         _isRegeistMessageDelegate = YES;
         /** 消息代理 */
         [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
+        
     }
 }
 
@@ -56,14 +61,18 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
 + (RedPacketUserConfig *)sharedConfig
 {
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
+        
         __sharedConfig__ = [[RedPacketUserConfig alloc] init];
-        [YZHRedpacketBridge sharedBridge].dataSource = __sharedConfig__;
-        [YZHRedpacketBridge sharedBridge].delegate = __sharedConfig__;
-        [YZHRedpacketBridge sharedBridge].isDebug = YES;
+        [RPRedpacketBridge sharedBridge].delegate = __sharedConfig__;
+        [RPRedpacketBridge sharedBridge].isDebug = YES;//开发者调试的的时候，设置为YES，看得见日志。
+        
     });
+    
     /** 为了保证消息通知被注册 */
     [__sharedConfig__ beginObserveMessage];
+    
     return __sharedConfig__;
 }
 
@@ -73,36 +82,47 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
 }
 
 /** MARK:获取当前用户登陆信息*/
-- (RedpacketUserInfo *)redpacketUserInfo
+- (RPUserInfo *)redpacketUserInfo
 {
-    RedpacketUserInfo *userInfo = [RedpacketUserInfo new];
-    userInfo.userId = [EMClient sharedClient].currentUsername;
+    RPUserInfo *userInfo = [RPUserInfo new];
+    userInfo.userID = [EMClient sharedClient].currentUsername;
     UserProfileEntity *entity = [[UserProfileManager sharedInstance] getCurUserProfile];
     NSString *nickname = entity.nickname;
-    userInfo.userNickname = nickname.length > 0 ? nickname : userInfo.userId;
-    userInfo.userAvatar = entity.imageUrl;;
+    userInfo.userName = nickname.length > 0 ? nickname : userInfo.userID;
+    userInfo.avatar = entity.imageUrl;;
     return userInfo;
 }
 
 /* MARK:红包Token注册回调**/
-- (void)redpacketFetchRegisitParam:(FetchRegisitParamBlock)fetchBlock withError:(NSError *)error
+- (void)redpacketFetchRegisitParam:(RPFetchRegisitParamBlock)fetchBlock withError:(NSError *)error
 {
     NSString *userToken = nil;
     BOOL isRefresh = error == nil ? NO : YES;
     EMClient *client = [EMClient sharedClient];
     SEL selector = NSSelectorFromString(@"getUserToken:");
+    
     if ([client respondsToSelector:selector]) {
+        
         IMP imp = [client methodForSelector:selector];
         NSString *(*func)(id, SEL, NSNumber *) = (void *)imp;
         userToken = func(client, selector, @(isRefresh));
+        
     }
+    
     if (userToken.length) {
-        NSString *userId = self.redpacketUserInfo.userId;
-        RedpacketRegisitModel *model = [RedpacketRegisitModel easeModelWithAppKey:_dealerAppKey appToken:userToken andAppUserId:userId];
+        
+        NSString *userId = self.redpacketUserInfo.userID;
+        RPRedpacketRegisitModel *model = [RPRedpacketRegisitModel easeModelWithAppKey:_dealerAppKey
+                                                                             appToken:userToken
+                                                                         andAppUserId:userId];
         fetchBlock(model);
+        
     }else {
+        
         fetchBlock(nil);
+        
     }
+
 }
 
 /** MARK:红包被抢消息处理*/
@@ -111,6 +131,7 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
     /** 收到红包被抢的 */
     [self handleMessage:aMessages];
 }
+
 -(void)didReceiveCmdMessages:(NSArray *)aCmdMessages
 {
     /** 收到红包被抢的消息 */
@@ -123,19 +144,14 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
     for (EMMessage *message in aMessages) {
         NSDictionary *dict = message.ext;
         if (dict) {
-            NSString *senderID = [dict valueForKey:RedpacketKeyRedpacketSenderId];
+            AnalysisRedpacketModel *redpacketModel = [AnalysisRedpacketModel analysisRedpacketWithDict:message.ext andIsSender:nil];
             NSString *currentUserID = [EMClient sharedClient].currentUsername;
-            BOOL isSender = [senderID isEqualToString:currentUserID];
+            BOOL isSender = [redpacketModel.sender.userID isEqualToString:currentUserID];
             NSString *text;
             /** 当前用户是红包发送者 */
-            if ([RedpacketMessageModel isRedpacketTakenMessage:dict] && isSender) {
-                NSString *receiver = [dict valueForKey:RedpacketKeyRedpacketReceiverNickname];
-                if (receiver.length == 0) {
-                    receiver = [dict valueForKey:RedpacketKeyRedpacketReceiverId];
-                }
-                text = [NSString stringWithFormat:@"%@领取了你的红包",receiver];
+            if ([AnalysisRedpacketModel messageCellTypeWithDict:dict] == MessageCellTypeRedpaketTaken && isSender) {
+                text = [NSString stringWithFormat:@"%@领取了你的红包",redpacketModel.receiver.userName];
             }
-            
             if (text && text.length > 0) {
                 EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:text];
                 message.body = body;
@@ -150,46 +166,74 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
 - (void)handleCmdMessages:(NSArray <EMMessage *> *)aCmdMessages
 {
     for (EMMessage *message in aCmdMessages) {
+        
         EMCmdMessageBody * body = (EMCmdMessageBody *)message.body;
-        if ([body.action isEqualToString:RedpacketKeyRedapcketCmd]) {
-            NSDictionary *dict = message.ext;
-            NSString *senderID = [dict valueForKey:RedpacketKeyRedpacketSenderId];
-            NSString *receiverID = [dict valueForKey:RedpacketKeyRedpacketReceiverId];
+        
+        if ([body.action isEqualToString:REDPACKET_CMD_MESSAGE]) {
+            
             NSString *currentUserID = [EMClient sharedClient].currentUsername;
             NSString *conversationId = [message.ext valueForKey:RedpacketKeyRedpacketCmdToGroup];
-            if ([senderID isEqualToString:currentUserID]){
+            
+            AnalysisRedpacketModel *redpacketModel = [AnalysisRedpacketModel analysisRedpacketWithDict:message.ext
+                                                                                           andIsSender:0];
+            
+            if ([redpacketModel.sender.userID isEqualToString:currentUserID]){
                 /** 当前用户是红包发送者 */
-                NSString *text = [NSString stringWithFormat:@"%@领取了你的红包",receiverID];
+                NSString *text = [NSString stringWithFormat:@"%@领取了你的红包",redpacketModel.receiver.userName];
                 EMTextMessageBody *body1 = [[EMTextMessageBody alloc] initWithText:text];
-                EMMessage *textMessage = [[EMMessage alloc] initWithConversationID:conversationId from:message.from to:conversationId body:body1 ext:message.ext];
+                EMMessage *textMessage = [[EMMessage alloc] initWithConversationID:conversationId
+                                                                              from:message.from
+                                                                                to:conversationId
+                                                                              body:body1
+                                                                               ext:message.ext];
                 textMessage.chatType = EMChatTypeGroupChat;
                 textMessage.isRead = YES;
                 /** 更新界面 */
                 BOOL isCurrentConversation = [self.chatVC.conversation.conversationId isEqualToString:conversationId];
+                
                 if (self.chatVC && isCurrentConversation){
+                    
                     /** 刷新当前聊天界面 */
-                    [self.chatVC addMessageToDataSource:textMessage progress:nil];
+                    [self.chatVC addMessageToDataSource:textMessage
+                                               progress:nil];
                     /** 存入当前会话并存入数据库 */
-                    [self.chatVC.conversation insertMessage:textMessage error:nil];
+                    [self.chatVC.conversation insertMessage:textMessage
+                                                      error:nil];
+                    
                 }else {
+                    
                     /** 插入数据库 */
                     ConversationListController *listVc = [ChatDemoHelper shareHelper].conversationListVC;
+                    
                     if (listVc) {
+                        
                         for (id <IConversationModel> model in [listVc.dataArray copy]) {
+                            
                             EMConversation *conversation = model.conversation;
+                            
                             if ([conversation.conversationId isEqualToString:textMessage.conversationId]) {
+                                
                                 [conversation insertMessage:textMessage error:nil];
+                                
                             }
+                            
                         }
+                        
                         [listVc refresh];
+                        
                     }else {
+                        
                         [[EMClient sharedClient].chatManager importMessages:@[textMessage] completion:nil];
+                        
                     }
                 }
             }
         }
     }
 }
+
+
+
 
 
 @end
