@@ -9,7 +9,7 @@ target 'ChatDemo-aplipayOpenUI' do
     
 	pod 'EaseUI', :path => '../EaseUI'
     
-    pod 'RedPacketAliAuthUI', :path => '../cocoapods-redpacket-ui-2.0.0'
+    pod 'RedpacketAliAuthLib'
 	
 	#pod 'Hyphenate_VideoRecoder', :path => '../HyphenateVideoRecoder'
 

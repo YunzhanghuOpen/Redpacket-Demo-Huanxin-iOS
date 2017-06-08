@@ -17,7 +17,9 @@
 #import "RPRedpacketUnionHandle.h"
 #import "AnalysisRedpacketModel.h"
 #import "RPRedpacketConstValues.h"
-
+#ifdef AliAuthPay
+#import "RPAdvertInfo.h"
+#endif
 
 #define REDPACKET_CMD_MESSAGE   @"refresh_red_packet_ack_action"
 
@@ -346,9 +348,9 @@
                                                     
                                                 }
                                                 
-                                            } advertisementAction:^(RPAdvertInfo *adInfo) {
+                                            } advertisementAction:^(id args) {
                                                 
-                                                [weakSelf advertisementAction:adInfo];
+                                                [weakSelf advertisementAction:args];
                                                 
                                             }];
         
@@ -359,9 +361,11 @@
     }
 }
 
-- (void)advertisementAction:(RPAdvertInfo *)adInfo
+- (void)advertisementAction:(id)args
 {
+#ifdef AliAuthPay
     /** 营销红包事件处理*/
+    RPAdvertInfo *adInfo  =args;
     switch (adInfo.AdvertisementActionType) {
         case RedpacketAdvertisementReceive:
             /** 用户点击了领取红包按钮*/
@@ -393,6 +397,35 @@
         default:
             break;
     }
+#else
+    NSDictionary *dict =args;
+    NSInteger actionType = [args[@"actionType"] integerValue];
+    switch (actionType) {
+        case 0:
+            // 点击了领取红包
+            break;
+        case 1: {
+            // 点击了去看看按钮，此处为演示
+            UIViewController     *VC = [[UIViewController alloc]init];
+            UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
+            [VC.view addSubview:webView];
+            NSString *url = args[@"LandingPage"];
+            NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+            [webView loadRequest:request];
+            [(UINavigationController *)self.presentedViewController pushViewController:VC animated:YES];
+        }
+            break;
+        case 2: {
+            // 点击了分享按钮，开发者可以根据需求自定义，动作。
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"点击「分享」按钮，红包SDK将该红包素材内配置的分享链接传递给商户APP，由商户APP自行定义分享渠道完成分享动作。" delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil];
+            [alert show];
+        }
+            break;
+        default:
+            break;
+    }
+
+#endif
 }
 
 @end

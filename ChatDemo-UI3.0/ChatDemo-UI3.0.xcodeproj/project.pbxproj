@@ -1373,7 +1373,6 @@
 				84F9805F1EE81B8100CB9BDA /* Redpacket.h */,
 				84F980601EE81B8100CB9BDA /* RedpacketEaseMob */,
 				84F980671EE81B8100CB9BDA /* RedpacketPublic */,
-				84F980791EE81B8100CB9BDA /* RedpacketUserConfig */,
 			);
 			path = RedpacketOpen;
 			sourceTree = "<group>";
@@ -1427,13 +1426,6 @@
 				84F980781EE81B8100CB9BDA /* RPRedpacketUnionHandle.m */,
 			);
 			path = RedpacketHandle;
-			sourceTree = "<group>";
-		};
-		84F980791EE81B8100CB9BDA /* RedpacketUserConfig */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RedpacketUserConfig;
 			sourceTree = "<group>";
 		};
 		90011F8F1AE4BF090088D549 /* EMAlertView */ = {
@@ -2015,7 +2007,7 @@
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					84F986711EE9369700CB9BDA = {
-						DevelopmentTeam = 499WYUV8Q2;
+						DevelopmentTeam = PUEB48NTQQ;
 					};
 					90911023192EEA70008A48AA = {
 						DevelopmentTeam = PUEB48NTQQ;
@@ -2788,7 +2780,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 499WYUV8Q2;
+				DEVELOPMENT_TEAM = PUEB48NTQQ;
 				EASEMOB_INC = "";
 				EASEMOB_LIB = "";
 				EASEMOB_LIBNAME = "";
@@ -2854,7 +2846,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.easemob.enterprise.demo.ui;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redpacket.aliAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2878,7 +2870,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ChatDemo-UI3.0/ChatDemo-UI3.0.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 499WYUV8Q2;
+				DEVELOPMENT_TEAM = PUEB48NTQQ;
 				EASEMOB_INC = "";
 				EASEMOB_LIB = "";
 				EASEMOB_LIBNAME = "";
@@ -2945,7 +2937,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.easemob.enterprise.demo.ui;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redpacket.aliAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
