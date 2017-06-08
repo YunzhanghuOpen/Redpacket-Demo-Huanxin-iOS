@@ -3,7 +3,7 @@ platform :ios, '8.0'
 # Import CocoaPods sources
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'ChatDemo-UI3.0' do
+target 'ChatDemo-aplipayOpenUI' do
 
     pod 'Hyphenate', '~> 3.3.2'
     
@@ -14,5 +14,18 @@ target 'ChatDemo-UI3.0' do
 	#pod 'Hyphenate_VideoRecoder', :path => '../HyphenateVideoRecoder'
 
 end
+
+target 'ChatDemo-JDpay' do
+    
+    pod 'Hyphenate', '~> 3.3.2'
+    
+    pod 'EaseUI', :path => '../EaseUI'
+    
+    pod 'RedpacketLib'
+    
+    #pod 'Hyphenate_VideoRecoder', :path => '../HyphenateVideoRecoder'
+    
+end
+
 
 

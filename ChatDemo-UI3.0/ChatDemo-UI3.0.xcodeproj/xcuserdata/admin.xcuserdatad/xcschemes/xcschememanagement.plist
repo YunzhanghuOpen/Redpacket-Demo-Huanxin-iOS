@@ -4,20 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ChatDemo-UI3.0-JDPay.xcscheme</key>
+		<key>ChatDemo-JDpay.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
 		</dict>
-		<key>ChatDemo-UI3.0.xcscheme</key>
+		<key>ChatDemo-aplipayOpenUI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>846D77061E6FB52A0091DC94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84F986711EE9369700CB9BDA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
