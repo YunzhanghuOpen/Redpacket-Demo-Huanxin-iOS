@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AnalysisRedpacketModel.h"
+#import "RPRedpacketUnionHandle.h"
 
 @interface RedPacketLuckView : UIView
 

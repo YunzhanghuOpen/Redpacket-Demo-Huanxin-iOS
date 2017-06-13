@@ -9,7 +9,7 @@
 #import "RedPacketUserConfig.h"
 #import "UserProfileManager.h"
 #import "RPRedpacketBridge.h"
-#import "AnalysisRedpacketModel.h"
+#import "RPRedpacketUnionHandle.h"
 #import "ChatDemoHelper.h"
 #import "RPRedpacketConstValues.h"
 

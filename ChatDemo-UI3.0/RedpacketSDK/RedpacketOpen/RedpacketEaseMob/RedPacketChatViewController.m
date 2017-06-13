@@ -15,7 +15,6 @@
 #import "ChatDemoHelper.h"
 #import "UserProfileManager.h"
 #import "RPRedpacketUnionHandle.h"
-#import "AnalysisRedpacketModel.h"
 #import "RPRedpacketConstValues.h"
 #ifdef AliAuthPay
 #import "RPAdvertInfo.h"

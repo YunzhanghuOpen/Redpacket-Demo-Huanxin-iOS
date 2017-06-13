@@ -10,7 +10,7 @@
 #import "RedpacketView.h"
 #import "RedPacketLuckView.h"
 #import "RPRedpacketUnionHandle.h"
-#import "AnalysisRedpacketModel.h"
+#import "RPRedpacketUnionHandle.h"
 
 
 @interface EaseRedBagCell()
