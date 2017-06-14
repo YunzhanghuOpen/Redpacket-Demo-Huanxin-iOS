@@ -5,9 +5,6 @@
 //  Created by Mr.Yang on 16/2/23.
 //
 
-
-
-
 #import "EaseBaseMessageCell.h"
 
 

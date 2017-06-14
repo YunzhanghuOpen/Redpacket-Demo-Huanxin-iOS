@@ -64,11 +64,11 @@ const CGFloat RedPacketLuckViewGreetingFontSize = 14;
     self.receiveButton.frame = CGRectMake(0, self.frame.size.height - 34, self.frame.size.width, 34);
 }
 
-- (void)configWithRedpacketMessageModel:(RedpacketMessageModel *)model
+- (void)configWithRedpacketMessageModel:(AnalysisRedpacketModel *)model
 {
-    NSString * imageName =  model.isRedacketSender ? @"redpacket_em_random_chat_bg" : @"redpacket_em_random_chatfrom_bg";
+    NSString * imageName =  model.isSender ? @"redpacket_em_random_chat_bg" : @"redpacket_em_random_chatfrom_bg";
     self.bubbleBackgroundView.image = [UIImage imageNamed:REDPACKETBUNDLE(imageName)];
-    self.greetingLabel.text = model.redpacket.redpacketGreeting;
+    self.greetingLabel.text = model.greeting;
 }
 
 @end

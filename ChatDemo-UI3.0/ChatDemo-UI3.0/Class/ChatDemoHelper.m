@@ -18,10 +18,8 @@
 
 #import "EaseSDKHelper.h"
 
-#ifdef REDPACKET_AVALABLE
-#import "RedpacketOpenConst.h"
+#import "RPRedpacketConstValues.h"
 #import "RedPacketUserConfig.h"
-#endif
 
 #if DEMO_CALL == 1
 #import "DemoCallManager.h"

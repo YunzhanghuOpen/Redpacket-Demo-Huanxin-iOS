@@ -389,22 +389,27 @@
 		846D78261E6FB52A0091DC94 /* chat_video_play.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA7A1A7CDABF00D16528 /* chat_video_play.png */; };
 		846D78271E6FB52A0091DC94 /* Button_Minimize disabled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A386EB11DE5539C000F3D8E /* Button_Minimize disabled@3x.png */; };
 		846D78281E6FB52A0091DC94 /* chat_location_annotation_someone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD2AA881A7CDABF00D16528 /* chat_location_annotation_someone@2x.png */; };
-		846D7BB01E7805530091DC94 /* AppDelegate+Redpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7B9C1E7805530091DC94 /* AppDelegate+Redpacket.m */; };
-		846D7BB21E7805530091DC94 /* EaseRedBagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7B9F1E7805530091DC94 /* EaseRedBagCell.m */; };
-		846D7BB31E7805530091DC94 /* EaseRedBagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7B9F1E7805530091DC94 /* EaseRedBagCell.m */; };
-		846D7BB41E7805530091DC94 /* RedPacketLuckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA11E7805530091DC94 /* RedPacketLuckView.m */; };
-		846D7BB51E7805530091DC94 /* RedPacketLuckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA11E7805530091DC94 /* RedPacketLuckView.m */; };
-		846D7BB61E7805530091DC94 /* RedpacketTakenMessageTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA31E7805530091DC94 /* RedpacketTakenMessageTipCell.m */; };
-		846D7BB71E7805530091DC94 /* RedpacketTakenMessageTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA31E7805530091DC94 /* RedpacketTakenMessageTipCell.m */; };
-		846D7BB81E7805530091DC94 /* RedpacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA51E7805530091DC94 /* RedpacketView.m */; };
-		846D7BB91E7805530091DC94 /* RedpacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA51E7805530091DC94 /* RedpacketView.m */; };
-		846D7BBA1E7805530091DC94 /* RedpacketCellResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 846D7BA61E7805530091DC94 /* RedpacketCellResource.bundle */; };
-		846D7BBB1E7805530091DC94 /* RedpacketCellResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 846D7BA61E7805530091DC94 /* RedpacketCellResource.bundle */; };
-		846D7BBC1E7805530091DC94 /* RedPacketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA91E7805530091DC94 /* RedPacketChatViewController.m */; };
-		846D7BBD1E7805530091DC94 /* RedPacketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BA91E7805530091DC94 /* RedPacketChatViewController.m */; };
-		846D7BBF1E7805530091DC94 /* AppDelegate+Redpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BAC1E7805530091DC94 /* AppDelegate+Redpacket.m */; };
-		846D7BC01E7805530091DC94 /* RedPacketUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BAF1E7805530091DC94 /* RedPacketUserConfig.m */; };
-		846D7BC11E7805530091DC94 /* RedPacketUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BAF1E7805530091DC94 /* RedPacketUserConfig.m */; };
+		84AE88501EF0D56400E1A666 /* EaseRedBagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE88381EF0D56400E1A666 /* EaseRedBagCell.m */; };
+		84AE88511EF0D56400E1A666 /* EaseRedBagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE88381EF0D56400E1A666 /* EaseRedBagCell.m */; };
+		84AE88521EF0D56400E1A666 /* RedPacketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE883A1EF0D56400E1A666 /* RedPacketChatViewController.m */; };
+		84AE88531EF0D56400E1A666 /* RedPacketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE883A1EF0D56400E1A666 /* RedPacketChatViewController.m */; };
+		84AE88541EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE883C1EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m */; };
+		84AE88551EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE883C1EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m */; };
+		84AE88561EF0D56400E1A666 /* RedPacketUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE883E1EF0D56400E1A666 /* RedPacketUserConfig.m */; };
+		84AE88571EF0D56400E1A666 /* RedPacketUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE883E1EF0D56400E1A666 /* RedPacketUserConfig.m */; };
+		84AE88581EF0D56400E1A666 /* RedpacketCellResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84AE88411EF0D56400E1A666 /* RedpacketCellResource.bundle */; };
+		84AE88591EF0D56400E1A666 /* RedpacketCellResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84AE88411EF0D56400E1A666 /* RedpacketCellResource.bundle */; };
+		84AE885A1EF0D56400E1A666 /* RedPacketLuckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE88431EF0D56400E1A666 /* RedPacketLuckView.m */; };
+		84AE885B1EF0D56400E1A666 /* RedPacketLuckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE88431EF0D56400E1A666 /* RedPacketLuckView.m */; };
+		84AE885C1EF0D56400E1A666 /* RedpacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE88451EF0D56400E1A666 /* RedpacketView.m */; };
+		84AE885D1EF0D56400E1A666 /* RedpacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE88451EF0D56400E1A666 /* RedpacketView.m */; };
+		84AE88601EF0D56400E1A666 /* AppDelegate+Redpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE884A1EF0D56400E1A666 /* AppDelegate+Redpacket.m */; };
+		84AE88611EF0D56400E1A666 /* AppDelegate+Redpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE884A1EF0D56400E1A666 /* AppDelegate+Redpacket.m */; };
+		84AE88621EF0D56400E1A666 /* RPRedpacketConstValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE884C1EF0D56400E1A666 /* RPRedpacketConstValues.m */; };
+		84AE88631EF0D56400E1A666 /* RPRedpacketConstValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE884C1EF0D56400E1A666 /* RPRedpacketConstValues.m */; };
+		84AE88641EF0D56400E1A666 /* RPRedpacketUnionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE884E1EF0D56400E1A666 /* RPRedpacketUnionHandle.m */; };
+		84AE88651EF0D56400E1A666 /* RPRedpacketUnionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE884E1EF0D56400E1A666 /* RPRedpacketUnionHandle.m */; };
+		84AE88661EF0D79100E1A666 /* EMGroupSharedFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6881D1EC2F4E600CA1905 /* EMGroupSharedFilesViewController.m */; };
 		90011F921AE4BF090088D549 /* EMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90011F911AE4BF090088D549 /* EMAlertView.m */; };
 		9003D86E1939D8D000DC38A4 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9003D7861939D8D000DC38A4 /* ChatViewController.m */; };
 		9003D9131939D8D000DC38A4 /* AddFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9003D85E1939D8D000DC38A4 /* AddFriendCell.m */; };
@@ -759,24 +764,26 @@
 		846D77041E6FA4DD0091DC94 /* EMCreateChatroomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMCreateChatroomController.m; path = "ChatDemo-UI3.0/Class/Chatroom/EMCreateChatroomController.m"; sourceTree = SOURCE_ROOT; };
 		846D782F1E6FB52A0091DC94 /* ChatDemo-UI3.0-JDPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatDemo-UI3.0-JDPay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		846D78311E6FF8090091DC94 /* ChatDemo-UI3.0-jdpay-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ChatDemo-UI3.0-jdpay-Info.plist"; sourceTree = "<group>"; };
-		846D7B991E7805530091DC94 /* Redpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Redpacket.h; sourceTree = "<group>"; };
-		846D7B9B1E7805530091DC94 /* AppDelegate+Redpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Redpacket.h"; sourceTree = "<group>"; };
-		846D7B9C1E7805530091DC94 /* AppDelegate+Redpacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Redpacket.m"; sourceTree = "<group>"; };
-		846D7B9E1E7805530091DC94 /* EaseRedBagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseRedBagCell.h; sourceTree = "<group>"; };
-		846D7B9F1E7805530091DC94 /* EaseRedBagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseRedBagCell.m; sourceTree = "<group>"; };
-		846D7BA01E7805530091DC94 /* RedPacketLuckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketLuckView.h; sourceTree = "<group>"; };
-		846D7BA11E7805530091DC94 /* RedPacketLuckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketLuckView.m; sourceTree = "<group>"; };
-		846D7BA21E7805530091DC94 /* RedpacketTakenMessageTipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTakenMessageTipCell.h; sourceTree = "<group>"; };
-		846D7BA31E7805530091DC94 /* RedpacketTakenMessageTipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTakenMessageTipCell.m; sourceTree = "<group>"; };
-		846D7BA41E7805530091DC94 /* RedpacketView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketView.h; sourceTree = "<group>"; };
-		846D7BA51E7805530091DC94 /* RedpacketView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketView.m; sourceTree = "<group>"; };
-		846D7BA61E7805530091DC94 /* RedpacketCellResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RedpacketCellResource.bundle; sourceTree = "<group>"; };
-		846D7BA81E7805530091DC94 /* RedPacketChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketChatViewController.h; sourceTree = "<group>"; };
-		846D7BA91E7805530091DC94 /* RedPacketChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketChatViewController.m; sourceTree = "<group>"; };
-		846D7BAB1E7805530091DC94 /* AppDelegate+Redpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Redpacket.h"; sourceTree = "<group>"; };
-		846D7BAC1E7805530091DC94 /* AppDelegate+Redpacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Redpacket.m"; sourceTree = "<group>"; };
-		846D7BAE1E7805530091DC94 /* RedPacketUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketUserConfig.h; sourceTree = "<group>"; };
-		846D7BAF1E7805530091DC94 /* RedPacketUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketUserConfig.m; sourceTree = "<group>"; };
+		84AE88351EF0D56400E1A666 /* Redpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Redpacket.h; sourceTree = "<group>"; };
+		84AE88371EF0D56400E1A666 /* EaseRedBagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseRedBagCell.h; sourceTree = "<group>"; };
+		84AE88381EF0D56400E1A666 /* EaseRedBagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseRedBagCell.m; sourceTree = "<group>"; };
+		84AE88391EF0D56400E1A666 /* RedPacketChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketChatViewController.h; sourceTree = "<group>"; };
+		84AE883A1EF0D56400E1A666 /* RedPacketChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketChatViewController.m; sourceTree = "<group>"; };
+		84AE883B1EF0D56400E1A666 /* RedpacketTakenMessageTipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTakenMessageTipCell.h; sourceTree = "<group>"; };
+		84AE883C1EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTakenMessageTipCell.m; sourceTree = "<group>"; };
+		84AE883D1EF0D56400E1A666 /* RedPacketUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketUserConfig.h; sourceTree = "<group>"; };
+		84AE883E1EF0D56400E1A666 /* RedPacketUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketUserConfig.m; sourceTree = "<group>"; };
+		84AE88411EF0D56400E1A666 /* RedpacketCellResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RedpacketCellResource.bundle; sourceTree = "<group>"; };
+		84AE88421EF0D56400E1A666 /* RedPacketLuckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketLuckView.h; sourceTree = "<group>"; };
+		84AE88431EF0D56400E1A666 /* RedPacketLuckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketLuckView.m; sourceTree = "<group>"; };
+		84AE88441EF0D56400E1A666 /* RedpacketView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketView.h; sourceTree = "<group>"; };
+		84AE88451EF0D56400E1A666 /* RedpacketView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketView.m; sourceTree = "<group>"; };
+		84AE88491EF0D56400E1A666 /* AppDelegate+Redpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Redpacket.h"; sourceTree = "<group>"; };
+		84AE884A1EF0D56400E1A666 /* AppDelegate+Redpacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Redpacket.m"; sourceTree = "<group>"; };
+		84AE884B1EF0D56400E1A666 /* RPRedpacketConstValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketConstValues.h; sourceTree = "<group>"; };
+		84AE884C1EF0D56400E1A666 /* RPRedpacketConstValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpacketConstValues.m; sourceTree = "<group>"; };
+		84AE884D1EF0D56400E1A666 /* RPRedpacketUnionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketUnionHandle.h; sourceTree = "<group>"; };
+		84AE884E1EF0D56400E1A666 /* RPRedpacketUnionHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpacketUnionHandle.m; sourceTree = "<group>"; };
 		90011F901AE4BF090088D549 /* EMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAlertView.h; sourceTree = "<group>"; };
 		90011F911AE4BF090088D549 /* EMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAlertView.m; sourceTree = "<group>"; };
 		9003D7851939D8D000DC38A4 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
@@ -1342,77 +1349,64 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		846D76E41E6EA71E0091DC94 /* RedpacketSDK */ = {
+		84AE88341EF0D56400E1A666 /* RedpacketOpen */ = {
 			isa = PBXGroup;
 			children = (
-				846D7B981E7805530091DC94 /* RedpacketOpen */,
+				84AE88351EF0D56400E1A666 /* Redpacket.h */,
+				84AE88361EF0D56400E1A666 /* RedpacketEaseMob */,
+				84AE883F1EF0D56400E1A666 /* RedpacketPublic */,
 			);
-			path = RedpacketSDK;
+			name = RedpacketOpen;
+			path = ../RedpacketOpen;
 			sourceTree = "<group>";
 		};
-		846D7B981E7805530091DC94 /* RedpacketOpen */ = {
+		84AE88361EF0D56400E1A666 /* RedpacketEaseMob */ = {
 			isa = PBXGroup;
 			children = (
-				846D7B991E7805530091DC94 /* Redpacket.h */,
-				846D7B9A1E7805530091DC94 /* RedpacketAliPay */,
-				846D7B9D1E7805530091DC94 /* RedpacketCell */,
-				846D7BA61E7805530091DC94 /* RedpacketCellResource.bundle */,
-				846D7BA71E7805530091DC94 /* RedPacketChatViewController */,
-				846D7BAA1E7805530091DC94 /* RedpacketJDPay */,
-				846D7BAD1E7805530091DC94 /* RedpacketUserConfig */,
+				84AE88371EF0D56400E1A666 /* EaseRedBagCell.h */,
+				84AE88381EF0D56400E1A666 /* EaseRedBagCell.m */,
+				84AE88391EF0D56400E1A666 /* RedPacketChatViewController.h */,
+				84AE883A1EF0D56400E1A666 /* RedPacketChatViewController.m */,
+				84AE883B1EF0D56400E1A666 /* RedpacketTakenMessageTipCell.h */,
+				84AE883C1EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m */,
+				84AE883D1EF0D56400E1A666 /* RedPacketUserConfig.h */,
+				84AE883E1EF0D56400E1A666 /* RedPacketUserConfig.m */,
 			);
-			path = RedpacketOpen;
+			path = RedpacketEaseMob;
 			sourceTree = "<group>";
 		};
-		846D7B9A1E7805530091DC94 /* RedpacketAliPay */ = {
+		84AE883F1EF0D56400E1A666 /* RedpacketPublic */ = {
 			isa = PBXGroup;
 			children = (
-				846D7B9B1E7805530091DC94 /* AppDelegate+Redpacket.h */,
-				846D7B9C1E7805530091DC94 /* AppDelegate+Redpacket.m */,
+				84AE88401EF0D56400E1A666 /* RedpacketCellPublic */,
+				84AE88461EF0D56400E1A666 /* RedpacketHandle */,
 			);
-			path = RedpacketAliPay;
+			path = RedpacketPublic;
 			sourceTree = "<group>";
 		};
-		846D7B9D1E7805530091DC94 /* RedpacketCell */ = {
+		84AE88401EF0D56400E1A666 /* RedpacketCellPublic */ = {
 			isa = PBXGroup;
 			children = (
-				846D7B9E1E7805530091DC94 /* EaseRedBagCell.h */,
-				846D7B9F1E7805530091DC94 /* EaseRedBagCell.m */,
-				846D7BA01E7805530091DC94 /* RedPacketLuckView.h */,
-				846D7BA11E7805530091DC94 /* RedPacketLuckView.m */,
-				846D7BA21E7805530091DC94 /* RedpacketTakenMessageTipCell.h */,
-				846D7BA31E7805530091DC94 /* RedpacketTakenMessageTipCell.m */,
-				846D7BA41E7805530091DC94 /* RedpacketView.h */,
-				846D7BA51E7805530091DC94 /* RedpacketView.m */,
+				84AE88411EF0D56400E1A666 /* RedpacketCellResource.bundle */,
+				84AE88421EF0D56400E1A666 /* RedPacketLuckView.h */,
+				84AE88431EF0D56400E1A666 /* RedPacketLuckView.m */,
+				84AE88441EF0D56400E1A666 /* RedpacketView.h */,
+				84AE88451EF0D56400E1A666 /* RedpacketView.m */,
 			);
-			path = RedpacketCell;
+			path = RedpacketCellPublic;
 			sourceTree = "<group>";
 		};
-		846D7BA71E7805530091DC94 /* RedPacketChatViewController */ = {
+		84AE88461EF0D56400E1A666 /* RedpacketHandle */ = {
 			isa = PBXGroup;
 			children = (
-				846D7BA81E7805530091DC94 /* RedPacketChatViewController.h */,
-				846D7BA91E7805530091DC94 /* RedPacketChatViewController.m */,
+				84AE88491EF0D56400E1A666 /* AppDelegate+Redpacket.h */,
+				84AE884A1EF0D56400E1A666 /* AppDelegate+Redpacket.m */,
+				84AE884B1EF0D56400E1A666 /* RPRedpacketConstValues.h */,
+				84AE884C1EF0D56400E1A666 /* RPRedpacketConstValues.m */,
+				84AE884D1EF0D56400E1A666 /* RPRedpacketUnionHandle.h */,
+				84AE884E1EF0D56400E1A666 /* RPRedpacketUnionHandle.m */,
 			);
-			path = RedPacketChatViewController;
-			sourceTree = "<group>";
-		};
-		846D7BAA1E7805530091DC94 /* RedpacketJDPay */ = {
-			isa = PBXGroup;
-			children = (
-				846D7BAB1E7805530091DC94 /* AppDelegate+Redpacket.h */,
-				846D7BAC1E7805530091DC94 /* AppDelegate+Redpacket.m */,
-			);
-			path = RedpacketJDPay;
-			sourceTree = "<group>";
-		};
-		846D7BAD1E7805530091DC94 /* RedpacketUserConfig */ = {
-			isa = PBXGroup;
-			children = (
-				846D7BAE1E7805530091DC94 /* RedPacketUserConfig.h */,
-				846D7BAF1E7805530091DC94 /* RedPacketUserConfig.m */,
-			);
-			path = RedpacketUserConfig;
+			path = RedpacketHandle;
 			sourceTree = "<group>";
 		};
 		90011F8F1AE4BF090088D549 /* EMAlertView */ = {
@@ -1501,7 +1495,7 @@
 		9091101B192EEA70008A48AA = {
 			isa = PBXGroup;
 			children = (
-				846D76E41E6EA71E0091DC94 /* RedpacketSDK */,
+				84AE88341EF0D56400E1A666 /* RedpacketOpen */,
 				9091102D192EEA70008A48AA /* ChatDemo-UI3.0 */,
 				90911026192EEA70008A48AA /* Frameworks */,
 				90911025192EEA70008A48AA /* Products */,
@@ -2127,7 +2121,7 @@
 				846D77DE1E6FB52A0091DC94 /* icon_022_cover.png in Resources */,
 				846D77DF1E6FB52A0091DC94 /* Button_End.png in Resources */,
 				846D77E01E6FB52A0091DC94 /* Settings.bundle in Resources */,
-				846D7BBB1E7805530091DC94 /* RedpacketCellResource.bundle in Resources */,
+				84AE88591EF0D56400E1A666 /* RedpacketCellResource.bundle in Resources */,
 				846D77E11E6FB52A0091DC94 /* Button_Camera switch active.png in Resources */,
 				846D77E21E6FB52A0091DC94 /* icon_027.gif in Resources */,
 				846D77E31E6FB52A0091DC94 /* EMCallViewController.xib in Resources */,
@@ -2230,6 +2224,7 @@
 				EBD2AB531A7CDAC000D16528 /* chat_location_preview.png in Resources */,
 				3A386EF51DE5539C000F3D8E /* Button_Mute active@2x.png in Resources */,
 				EBD2ABA71A7CDAC000D16528 /* group_participant_add@2x.png in Resources */,
+				84AE88581EF0D56400E1A666 /* RedpacketCellResource.bundle in Resources */,
 				EBD2AB891A7CDAC000D16528 /* chat_receiver_audio_playing002@2x.png in Resources */,
 				EBD2AB3D1A7CDAC000D16528 /* call_silence.png in Resources */,
 				D2B3DAD31BF1D7B700913BD5 /* icon_020_cover.png in Resources */,
@@ -2307,7 +2302,6 @@
 				D2B3DAD71BF1D7B700913BD5 /* icon_022_cover.png in Resources */,
 				3A386EEB1DE5539C000F3D8E /* Button_End.png in Resources */,
 				D26CE39B1C2BD37700697F48 /* Settings.bundle in Resources */,
-				846D7BBA1E7805530091DC94 /* RedpacketCellResource.bundle in Resources */,
 				3A386EDF1DE5539C000F3D8E /* Button_Camera switch active.png in Resources */,
 				D2B3DADC1BF1D7B700913BD5 /* icon_027.gif in Resources */,
 				3A386ED31DE5539C000F3D8E /* EMCallViewController.xib in Resources */,
@@ -2513,9 +2507,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AE88661EF0D79100E1A666 /* EMGroupSharedFilesViewController.m in Sources */,
 				D227D1AA1E9CCFE600FC1B86 /* EMGroupInfoViewController.m in Sources */,
 				D227D1AB1E9CCFE600FC1B86 /* EMGroupTransferOwnerViewController.m in Sources */,
 				D227D1AC1E9CCFE600FC1B86 /* EMMemberCell.m in Sources */,
+				84AE88611EF0D56400E1A666 /* AppDelegate+Redpacket.m in Sources */,
 				846D77091E6FB52A0091DC94 /* AppDelegate.m in Sources */,
 				846D770A1E6FB52A0091DC94 /* RobotListViewController.m in Sources */,
 				846D770B1E6FB52A0091DC94 /* SRSlimeView.m in Sources */,
@@ -2545,6 +2541,7 @@
 				846D77251E6FB52A0091DC94 /* EMRotbotChatViewCell.m in Sources */,
 				846D77281E6FB52A0091DC94 /* UIViewController+SearchController.m in Sources */,
 				846D77291E6FB52A0091DC94 /* CallSettingViewController.m in Sources */,
+				84AE88511EF0D56400E1A666 /* EaseRedBagCell.m in Sources */,
 				846D772A1E6FB52A0091DC94 /* AddFriendViewController.m in Sources */,
 				846D772C1E6FB52A0091DC94 /* EMGroupMutesViewController.m in Sources */,
 				846D772D1E6FB52A0091DC94 /* SearchMessageViewController.m in Sources */,
@@ -2552,6 +2549,7 @@
 				846D772F1E6FB52A0091DC94 /* ContactSelectionViewController.m in Sources */,
 				846D77301E6FB52A0091DC94 /* GroupSubjectChangingViewController.m in Sources */,
 				846D77311E6FB52A0091DC94 /* UIImageView+HeadImage.m in Sources */,
+				84AE88551EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m in Sources */,
 				846D77321E6FB52A0091DC94 /* EMChatroomBansViewController.m in Sources */,
 				846D77331E6FB52A0091DC94 /* ApplyFriendCell.m in Sources */,
 				846D77341E6FB52A0091DC94 /* GroupSettingViewController.m in Sources */,
@@ -2559,47 +2557,46 @@
 				846D77361E6FB52A0091DC94 /* ApplyViewController.m in Sources */,
 				846D77371E6FB52A0091DC94 /* ChatroomDetailViewController.m in Sources */,
 				846D77381E6FB52A0091DC94 /* main.m in Sources */,
+				84AE88571EF0D56400E1A666 /* RedPacketUserConfig.m in Sources */,
 				846D77391E6FB52A0091DC94 /* PushNotificationViewController.m in Sources */,
+				84AE885D1EF0D56400E1A666 /* RedpacketView.m in Sources */,
 				846D773A1E6FB52A0091DC94 /* UserProfileViewController.m in Sources */,
 				846D773B1E6FB52A0091DC94 /* EMChatroomMembersViewController.m in Sources */,
 				846D773C1E6FB52A0091DC94 /* InvitationManager.m in Sources */,
 				846D773D1E6FB52A0091DC94 /* EMGroupBansViewController.m in Sources */,
-				846D7BBD1E7805530091DC94 /* RedPacketChatViewController.m in Sources */,
 				846D773F1E6FB52A0091DC94 /* ContactListViewController.m in Sources */,
 				846D77401E6FB52A0091DC94 /* AppDelegate+UMeng.m in Sources */,
 				846D77411E6FB52A0091DC94 /* BlackListViewController.m in Sources */,
 				846D77421E6FB52A0091DC94 /* SettingsViewController.m in Sources */,
 				846D77431E6FB52A0091DC94 /* AppDelegate+Parse.m in Sources */,
-				846D7BC11E7805530091DC94 /* RedPacketUserConfig.m in Sources */,
 				846D77441E6FB52A0091DC94 /* PublicGroupDetailViewController.m in Sources */,
 				846D77451E6FB52A0091DC94 /* LoginViewController.m in Sources */,
 				846D77461E6FB52A0091DC94 /* EMCallOptions+NSCoding.m in Sources */,
+				84AE88531EF0D56400E1A666 /* RedPacketChatViewController.m in Sources */,
 				846D77481E6FB52A0091DC94 /* DebugViewController.m in Sources */,
 				846D77491E6FB52A0091DC94 /* RobotManager.m in Sources */,
-				846D7BBF1E7805530091DC94 /* AppDelegate+Redpacket.m in Sources */,
 				846D774A1E6FB52A0091DC94 /* EMGroupMembersViewController.m in Sources */,
 				846D774B1E6FB52A0091DC94 /* EMCallViewController.mm in Sources */,
 				846D774C1E6FB52A0091DC94 /* EMSearchBar.m in Sources */,
 				846D774D1E6FB52A0091DC94 /* CreateGroupViewController.m in Sources */,
-				846D7BB91E7805530091DC94 /* RedpacketView.m in Sources */,
 				846D774E1E6FB52A0091DC94 /* RealtimeSearchUtil.m in Sources */,
 				846D774F1E6FB52A0091DC94 /* TTGlobalUICommon.m in Sources */,
 				846D77501E6FB52A0091DC94 /* GettingMoreFooterView.m in Sources */,
+				84AE88631EF0D56400E1A666 /* RPRedpacketConstValues.m in Sources */,
 				846D77511E6FB52A0091DC94 /* AppDelegate+EaseMobDebug.m in Sources */,
 				846D77521E6FB52A0091DC94 /* ChatroomListViewController.m in Sources */,
 				846D77531E6FB52A0091DC94 /* EMSearchResultController.m in Sources */,
 				846D77541E6FB52A0091DC94 /* AppDelegate+EaseMob.m in Sources */,
 				846D77551E6FB52A0091DC94 /* ContactView.m in Sources */,
 				846D77561E6FB52A0091DC94 /* ChatDemoHelper.m in Sources */,
+				84AE885B1EF0D56400E1A666 /* RedPacketLuckView.m in Sources */,
 				846D77581E6FB52A0091DC94 /* EditNicknameViewController.m in Sources */,
 				846D77591E6FB52A0091DC94 /* EMGroupAdminsViewController.m in Sources */,
 				846D775A1E6FB52A0091DC94 /* MainViewController.m in Sources */,
 				846D775B1E6FB52A0091DC94 /* EMNavigationController.m in Sources */,
+				84AE88651EF0D56400E1A666 /* RPRedpacketUnionHandle.m in Sources */,
 				846D775C1E6FB52A0091DC94 /* EMTextView.m in Sources */,
-				846D7BB31E7805530091DC94 /* EaseRedBagCell.m in Sources */,
-				846D7BB51E7805530091DC94 /* RedPacketLuckView.m in Sources */,
 				846D775D1E6FB52A0091DC94 /* UIResponder+Router.m in Sources */,
-				846D7BB71E7805530091DC94 /* RedpacketTakenMessageTipCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2613,14 +2610,18 @@
 				846D77051E6FA4DD0091DC94 /* EMCreateChatroomController.m in Sources */,
 				3A2858141DF856AD0062B7F0 /* CallResolutionViewController.m in Sources */,
 				9003D9131939D8D000DC38A4 /* AddFriendCell.m in Sources */,
+				84AE88601EF0D56400E1A666 /* AppDelegate+Redpacket.m in Sources */,
 				90EF2CEE192F2B4E00BDC549 /* SRRefreshView.m in Sources */,
+				84AE88501EF0D56400E1A666 /* EaseRedBagCell.m in Sources */,
 				3A6764B11E5D2C4F00ABF196 /* ChatGroupDetailViewController.m in Sources */,
 				3C914D8419514BBD0002DAD3 /* GroupListViewController.m in Sources */,
 				90011F921AE4BF090088D549 /* EMAlertView.m in Sources */,
 				90B42A371B65E62C00968342 /* RobotChatViewController.m in Sources */,
 				D2B61E331BC7BEA6007CB53E /* ConversationListController.m in Sources */,
+				84AE88541EF0D56400E1A666 /* RedpacketTakenMessageTipCell.m in Sources */,
 				3A386ED41DE5539C000F3D8E /* EMVideoInfoViewController.m in Sources */,
 				D2F7691F1CBF42DB009778FB /* SearchChatViewController.m in Sources */,
+				84AE88641EF0D56400E1A666 /* RPRedpacketUnionHandle.m in Sources */,
 				3C6BBA0619419EBD00A64684 /* EMRemarkImageView.m in Sources */,
 				D29A6BAC1B72090F002324BB /* UserProfileManager.m in Sources */,
 				D29A6BAF1B720960002324BB /* UserProfileEditViewController.m in Sources */,
@@ -2636,7 +2637,7 @@
 				3A386EDA1DE5539C000F3D8E /* DemoCallManager.m in Sources */,
 				906083DA1B71F894008574B4 /* EMRotbotChatViewCell.m in Sources */,
 				3A32AB841DDEBF4600E03E27 /* UIViewController+SearchController.m in Sources */,
-				846D7BB01E7805530091DC94 /* AppDelegate+Redpacket.m in Sources */,
+				84AE885A1EF0D56400E1A666 /* RedPacketLuckView.m in Sources */,
 				3A635C151DF696AC005C995E /* CallSettingViewController.m in Sources */,
 				9003D9141939D8D000DC38A4 /* AddFriendViewController.m in Sources */,
 				D25AA3591E8D29C8006BF820 /* EMGroupInfoViewController.m in Sources */,
@@ -2657,16 +2658,16 @@
 				3C117122197D243B00E2DBEC /* PushNotificationViewController.m in Sources */,
 				D2CB225C1B60CB08001BC741 /* UserProfileViewController.m in Sources */,
 				3A2C3A271E23AF5000DCD9BE /* EMChatroomMembersViewController.m in Sources */,
+				84AE88521EF0D56400E1A666 /* RedPacketChatViewController.m in Sources */,
 				90985E481A8A08D400976DD6 /* InvitationManager.m in Sources */,
 				3AF6A65A1E1F80570022E835 /* EMGroupBansViewController.m in Sources */,
 				D25AA35B1E8D29C8006BF820 /* EMMemberCell.m in Sources */,
-				846D7BBC1E7805530091DC94 /* RedPacketChatViewController.m in Sources */,
 				D2B61E361BC7C76B007CB53E /* ContactListViewController.m in Sources */,
+				84AE88561EF0D56400E1A666 /* RedPacketUserConfig.m in Sources */,
 				90517D6A1A5C3DB0008F1315 /* AppDelegate+UMeng.m in Sources */,
 				3C2923B11988E13300DCCD40 /* BlackListViewController.m in Sources */,
 				9091112F192EEC0F008A48AA /* SettingsViewController.m in Sources */,
 				D29A6BB91B720A62002324BB /* AppDelegate+Parse.m in Sources */,
-				846D7BC01E7805530091DC94 /* RedPacketUserConfig.m in Sources */,
 				3C3EB2FF195465D100E1AE9E /* PublicGroupDetailViewController.m in Sources */,
 				90911137192EEC91008A48AA /* LoginViewController.m in Sources */,
 				3A386EDB1DE5539C000F3D8E /* EMCallOptions+NSCoding.m in Sources */,
@@ -2677,7 +2678,6 @@
 				D25AA35A1E8D29C8006BF820 /* EMGroupTransferOwnerViewController.m in Sources */,
 				905325CF1932ED8B00F064D7 /* EMSearchBar.m in Sources */,
 				3C914D8619514BBD0002DAD3 /* CreateGroupViewController.m in Sources */,
-				846D7BB81E7805530091DC94 /* RedpacketView.m in Sources */,
 				9003D9181939D8D000DC38A4 /* RealtimeSearchUtil.m in Sources */,
 				3A807B061D9511B1004D18CB /* TTGlobalUICommon.m in Sources */,
 				833E2D9E1DC723D600C5AB48 /* GettingMoreFooterView.m in Sources */,
@@ -2686,16 +2686,15 @@
 				3AA412E81DDEDB2600317D72 /* EMSearchResultController.m in Sources */,
 				90517D671A5C3C1F008F1315 /* AppDelegate+EaseMob.m in Sources */,
 				3C13D94E1A120BA200903622 /* ContactView.m in Sources */,
+				84AE885C1EF0D56400E1A666 /* RedpacketView.m in Sources */,
 				D2FFDB921C1687A30031425A /* ChatDemoHelper.m in Sources */,
 				D2BF98B31AEDD780009E0D5C /* EditNicknameViewController.m in Sources */,
 				3AD0FB9A1E1E7267001F3957 /* EMGroupAdminsViewController.m in Sources */,
 				90911145192EEE6E008A48AA /* MainViewController.m in Sources */,
 				3A807B0F1D951301004D18CB /* EMNavigationController.m in Sources */,
+				84AE88621EF0D56400E1A666 /* RPRedpacketConstValues.m in Sources */,
 				3C6BBA0C1941A7CF00A64684 /* EMTextView.m in Sources */,
-				846D7BB21E7805530091DC94 /* EaseRedBagCell.m in Sources */,
-				846D7BB41E7805530091DC94 /* RedPacketLuckView.m in Sources */,
 				9091111B192EEAED008A48AA /* UIResponder+Router.m in Sources */,
-				846D7BB61E7805530091DC94 /* RedpacketTakenMessageTipCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
