@@ -9,7 +9,7 @@ target 'ChatDemo-UI3.0' do
     
 	pod 'EaseUI', :path => '../EaseUI'
 
-	pod 'RedpacketAliAuthLib'
+	pod 'RedpacketAliAuthLib' ,'~> 2.0.1'
 	
 	#pod 'Hyphenate_VideoRecoder', :path => '../HyphenateVideoRecoder'
 
